@@ -1,0 +1,27 @@
+.cal {
+    display: flex;
+    justify-items: right;
+    align-items: center;
+    gap: 10px;
+
+    .icon {
+        display: flex;
+        width: 35px;
+        height: 35px;
+
+        justify-content: center;
+    }
+
+    .date {
+        color: #2D4BEB;
+        font-size: 25px;
+        font-style: italic;
+        line-height: 30px;
+        display: inline;
+    }
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
+    
+}

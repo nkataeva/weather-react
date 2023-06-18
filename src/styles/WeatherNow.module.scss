@@ -1,0 +1,87 @@
+.Wnow {
+    display: flex;
+    justify-content: center;
+
+    .main {
+        margin: auto 0;
+        img {
+            width: 130px;
+            height: 130px;
+        }
+
+        @mixin textBig {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .status {
+            font-style: italic;
+            font-weight: 300;
+            @include textBig();
+            margin: 0 0 15px 0;
+        }
+
+        #tempHeader {
+            display: inline;
+            font-style: medium italic;
+            font-weight: 500;
+            @include textBig();
+        }
+
+        #tempValue {
+            display: inline;
+            font-style: light italic;
+            font-weight: 300;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        .indicators {
+            margin: 15px auto 0 auto;
+            // margin-top: 15px;
+            padding: 15px 15px;
+            display: flex;
+            justify-content: space-between;
+
+            @mixin textSmall {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .left {
+                text-align: left;
+                margin-right: 40px;
+            }
+
+            .right {
+                text-align: left;
+            }
+
+            .header {
+                display: inline;
+                @include textSmall();
+                font-style: medium italic;
+                font-weight: 500;
+            }
+
+            .value {
+                display: inline;
+                @include textSmall();
+                font-style: light italic;
+                font-weight: 300;
+            }
+        }
+    }
+
+    .imgGirl {
+        width: 450px;
+        height: 400px;
+
+        @media screen and (max-width: 750px) {
+            display: none;
+            position: absolute;
+        }
+    }
+
+
+}

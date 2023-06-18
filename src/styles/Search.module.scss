@@ -1,0 +1,69 @@
+.search {
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px 0 0 0;
+    gap: 20px;
+    padding: 10px;
+    font-family: 'Advent Pro';
+
+    @media screen and (max-width: 750px) {
+        margin-top: 50px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .icon {
+        width: 30px;
+        height: 35px;
+        margin: auto 0;
+    }
+
+    .inputSearch {
+        margin: auto 0;
+        padding-left: 10px;
+        width: 200px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        background-image: linear-gradient(to right, black, black);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 100% 1px;
+    }
+
+    .inputSearch:focus {
+        outline: none;
+    }
+
+    .buttonSearch {
+        cursor: pointer;
+        margin: auto 0;
+        height: 50px;
+        width: 200px;
+        padding: 15px 20px;
+        border-radius: 100px;
+        border: 0px;
+        white-space: nowrap;
+        background: conic-gradient(from 180deg at 50% 50%, #5B7EF7 -133.93deg, #85D5F8 64.17deg, #5B7EF7 226.07deg, #85D5F8 424.17deg);
+        // @media screen and (max-width: 750px) {
+        //     margin-top: 20px;
+        // }
+    }
+
+    .buttonSearch,
+    .inputSearch {
+        font-size: 18px;
+    }
+
+    .cal {
+        display: flex;
+        justify-content: right;
+    }
+}
+
+.search .cal {
+    margin-left: auto;
+    @media screen and (max-width: 530px) {
+        display: none;
+    }
+}
