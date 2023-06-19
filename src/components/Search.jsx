@@ -10,7 +10,6 @@ function Search(props) {
     }
 
     const searchHandler = async (e) => {
-        console.log(e);
         const data = await getDataNow(props.city);
         props.dataSet(data);
         console.log(data)

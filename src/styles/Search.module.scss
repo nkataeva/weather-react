@@ -12,6 +12,10 @@
         justify-content: center;
     }
 
+    @media screen and (max-width: 480px) {
+        margin-top: 30px;
+    }
+
     .icon {
         width: 30px;
         height: 35px;
@@ -45,9 +49,12 @@
         border: 0px;
         white-space: nowrap;
         background: conic-gradient(from 180deg at 50% 50%, #5B7EF7 -133.93deg, #85D5F8 64.17deg, #5B7EF7 226.07deg, #85D5F8 424.17deg);
-        // @media screen and (max-width: 750px) {
-        //     margin-top: 20px;
-        // }
+
+        @media screen and (max-width: 480px) {
+            height: 45px;
+            width: 180px;
+            padding: 0;
+        }
     }
 
     .buttonSearch,
@@ -63,6 +70,7 @@
 
 .search .cal {
     margin-left: auto;
+
     @media screen and (max-width: 530px) {
         display: none;
     }

@@ -4,7 +4,7 @@ import styles from '../styles/WeatherDay.module.scss';
 
 const WeatherDay = (props) => {
     let settings = {
-        dots: true,
+        dots: false,
         infinite: false,
         speed: 500,
         slidesToShow: 7,
@@ -17,7 +17,6 @@ const WeatherDay = (props) => {
                     slidesToShow: 4,
                     slidesToScroll: 4,
                     infinite: true,
-                    dots: true
                 }
             },
             {
@@ -50,7 +49,7 @@ const WeatherDay = (props) => {
                     )
                 })}
             </Slider>
-            <button className={styles.future}>Прогноз на 10 дней</button>
+            <button id={styles.future}>Прогноз на 10 дней</button>
         </div>
     )
 }

@@ -6,10 +6,9 @@
 }
 
 .slider {
-    margin: 10px 20px 0 20px;
-
+    margin: 10px 25px 0 25px;
     p {
-        margin: 15px 0;
+        margin: 10px 0;
         @include font();
         text-align: center;
     }
@@ -17,9 +16,10 @@
     img {
         margin: 0 auto;
     }
+
 }
 
-.future {
+#future {
     margin: 40px 0;
     width: 200px;
     padding: 8px 15px;
@@ -27,8 +27,7 @@
     font-weight: 400;
     font-size: 15px;
     line-height: 29px;
-    background-color: transparent;
+    border: none;
     border-radius: 100px;
-    border-color: conic-gradient(from 180deg at 50% 50%, #5B7EF7 -133.93deg, #85D5F8 64.17deg, #5B7EF7 226.07deg, #85D5F8 424.17deg);
-    ;
+    background: conic-gradient(from 180deg at 50% 50%, #5B7EF7 -133.93deg, #85D5F8 64.17deg, #5B7EF7 226.07deg, #85D5F8 424.17deg);
 }
