@@ -1,6 +1,6 @@
 import React from "react"
 import styles from "../styles/Search.module.scss"
-import { getDataNow } from "../data/getData";
+import { getData } from "../data/getData";
 import locationImage from '../images/icons/location.png';
 
 
@@ -10,7 +10,7 @@ function Search(props) {
     }
 
     const searchHandler = async (e) => {
-        const data = await getDataNow(props.city);
+        const data = await getData(props.city, 1);
         props.dataSet(data);
         console.log(data)
     }

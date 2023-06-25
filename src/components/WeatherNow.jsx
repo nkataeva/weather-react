@@ -1,9 +1,9 @@
 import React from "react";
 import styles from '../styles/WeatherNow.module.scss'
-import imgGirl from '../images/girls/windy.png'
+// import imgGirl from '../images/girls/windy.png'
 
 
-const WeatherNow = (props) => {
+const WeatherNow = (props) => {  
     // console.log(props.data);
     const wind = (props.data?.current?.wind_kph / 3.6).toFixed(1);
 
@@ -34,7 +34,7 @@ const WeatherNow = (props) => {
                     </div>
                 </div>
             </div>
-            <img className={styles.imgGirl} src={imgGirl} alt="imgGirl"></img>
+            {/* <img className={styles.imgGirl} src={imgGirl} alt="imgGirl"></img> */}
         </div>
     )
 }

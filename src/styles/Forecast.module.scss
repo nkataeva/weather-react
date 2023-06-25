@@ -1,0 +1,38 @@
+.location {
+    display: flex;
+    margin: 40px 20px;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: left;
+    align-items: center;
+
+    #icon {
+        width: 30px;
+        height: 35px;
+    }
+
+    #city {
+        font-weight: 300;
+        font-style: italic;
+        font-size: 30px;
+        line-height: 48px;
+        white-space: nowrap;
+    }
+}
+
+.forecast {
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: conic-gradient(from 180deg at 50% 50%, #5B7EF7 -133.93deg, #85D5F8 64.17deg, #5B7EF7 226.07deg, #85D5F8 424.17deg);
+    .top {
+        display: grid;
+        grid-template-rows: 3fr 1fr 3fr;
+    }
+    .bottom {
+        display: flex;
+        flex-direction: row;
+    }
+}

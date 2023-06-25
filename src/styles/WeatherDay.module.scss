@@ -20,7 +20,10 @@
 }
 
 #future {
-    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 40px auto;
     width: 200px;
     padding: 8px 15px;
     white-space: nowrap;

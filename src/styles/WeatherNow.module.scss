@@ -3,7 +3,8 @@
     justify-content: center;
 
     .main {
-        margin: auto 0;
+        text-align: center;
+        margin: 0 0 40px 0;
         img {
             width: 130px;
             height: 130px;
@@ -63,6 +64,7 @@
             @mixin textSmall {
                 font-size: 20px;
                 line-height: 24px;
+                text-align: center;
             }
 
             @media screen and (max-width: 480px){
@@ -105,6 +107,7 @@
     .imgGirl {
         width: 450px;
         height: 400px;
+        margin: 0 auto;
 
         @media screen and (max-width: 1024px) {
             width: 400px;

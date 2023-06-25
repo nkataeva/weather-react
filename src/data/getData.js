@@ -1,8 +1,8 @@
-export async function getDataNow(city) {
+export async function getData(city, days) {
     if (!city)
         return null;
     try {
-        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=684c18b7614a4f2ea69150435231006&q=${city}&days=1&aqi=no&alerts=no&lang=ru`,
+        const response = await fetch(`http://api.weatherapi.com/v1/forecast.json?key=684c18b7614a4f2ea69150435231006&q=${city}&days=${days}&aqi=no&alerts=no&lang=ru`,
             {
                 method: 'GET',
                 headers: {

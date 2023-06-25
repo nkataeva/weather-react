@@ -1,8 +1,17 @@
 import React from "react";
 import Slider from "react-slick";
 import styles from '../styles/WeatherDay.module.scss';
+import { useNavigate } from "react-router-dom";
+import { getData } from "../data/getData";
 
 const WeatherDay = (props) => {
+    const navigate = useNavigate();
+
+    const handleClick = async () => {
+        props.setDataForecast(await getData(props?.data?.location?.name, 3));
+        navigate('/forecast');
+    }
+
     let settings = {
         dots: false,
         infinite: false,
@@ -49,7 +58,7 @@ const WeatherDay = (props) => {
                     )
                 })}
             </Slider>
-            <button id={styles.future}>Прогноз на 10 дней</button>
+            <button id={styles.future} onClick={handleClick}>Прогноз на 3 дня</button>
         </div>
     )
 }
